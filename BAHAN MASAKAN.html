@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahan Masakan</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff5f5;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #cc2323;
+      padding: 12px 40px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .logo img {
+      width: 90px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.1em;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffecec;
+      transform: translateY(-2px);
+    }
+
+    /* JUDUL HALAMAN */
+    h1 {
+      text-align: center;
+      color: #c40000;
+      margin-top: 160px;
+      margin-bottom: 30px;
+      font-size: 2.4em;
+      font-weight: 700;
+    }
+
+    /* GRID PRODUK */
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      padding: 30px;
+      width: 90%;
+      margin: auto;
+    }
+
+    /* CARD PRODUK */
+    .product {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;  
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      font-size: 1.3em;
+      margin-bottom: 5px;
+      color: #cc0000;
+    }
+
+    .price {
+      font-weight: 700;
+      color: #e00000;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .btn-buy {
+      display: inline-block;
+      padding: 10px 22px;
+      background-color: #cc0000;
+      color: white;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.25s;
+      font-size: 1em;
+    }
+
+    .btn-buy:hover {
+      background-color: #900000;
+      transform: scale(1.07);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo-trans.png" alt="Logo">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="PAKAIAN.html" target="_blank">PAKAIAN</a></li>
+      <li><a href="BAHAN MASAKAN.html" target="_blank">BAHAN MASAKAN</a></li>
+      <li><a href="MAINAN.html" target="_blank">MAINAN</a></li>
+      <li><a href="ALAT TULIS.html" target="_blank">ALAT TULIS</a></li>
+    </ul>
+  </nav>
+
+  <h1>Bahan Masakan</h1>
+
+  <div class="product-container">
+
+    <!-- PRODUK 1 -->
+    <div class="product">
+      <img src="bawang.jpg" alt="Bawang Merah">
+      <h3>Bawang Merah</h3>
+      <p class="price">Rp 15.000</p>
+      <a href="bawang.jpg" download class="btn-buy">Beli</a>
+    </div>
+
+    <!-- PRODUK 2 -->
+    <div class="product">
+      <img src="cabai.jpg" alt="Cabai Merah">
+      <h3>Cabai Merah</h3>
+      <p class="price">Rp 12.000</p>
+      <a href="cabai.jpg" download class="btn-buy">Beli</a>
+    </div>
+
+    <!-- PRODUK 3 -->
+    <div class="product">
+      <img src="tomat.jpg" alt="Tomat">
+      <h3>Tomat</h3>
+      <p class="price">Rp 8.000</p>
+      <a href="tomat.jpg" download class="btn-buy">Beli</a>
+    </div>
+
+    <!-- PRODUK 4 -->
+    <div class="product">
+      <img src="wortel.jpg" alt="Wortel">
+      <h3>Wortel</h3>
+      <p class="price">Rp 7.000</p>
+      <a href="wortel.jpg" download class="btn-buy">Beli</a>
+    </div>
+
+    <!-- PRODUK 5 -->
+    <div class="product">
+      <img src="timun.jpg" alt="Timun">
+      <h3>Timun</h3>
+      <p class="price">Rp 6.000</p>
+      <a href="timun.jpg" download class="btn-buy">Beli</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
